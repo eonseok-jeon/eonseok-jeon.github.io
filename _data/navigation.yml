@@ -8,11 +8,11 @@
 
 main:
   - title: "TIL"
-    url: /categories/til/
+    url: /categories/til
   - title: "errors"
-    url: /categories/errors/
+    url: /categories/errors
   - title: "daily"
-    url: /categories/daily/
+    url: /categories/daily
 
 sidebar-category:
   - title: "카테고리"
