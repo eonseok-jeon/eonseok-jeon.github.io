@@ -1,10 +1,10 @@
 ---
-title: "Tody I Learned"
+title: "TypeScript"
 layout: archive
-permalink: categories/til
+permalink: categories/typescript
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.TIL %}
+{% assign posts = site.categories.TypeScript %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

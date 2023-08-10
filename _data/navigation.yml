@@ -7,19 +7,16 @@
 #     url: /categories/
 
 main:
-  - title: "TIL"
-    url: /categories/til
-  - title: "errors"
-    url: /categories/errors
-  - title: "daily"
-    url: /categories/daily
-
-sidebar-category:
-  - title: "카테고리"
-    children:
-      - title: "TIL"
-        url: "/til"
-      - title: "에러 해결"
-        url: "/errors"
-      - title: "일상"
-        url: "/daily"
+  - title: "Home"
+    url: /
+  - title: "Categories"
+    url: /categories
+# sidebar-category:
+#   - title: "카테고리"
+#     children:
+#       - title: "TIL"
+#         url: "/til"
+#       - title: "에러 해결"
+#         url: "/errors"
+#       - title: "일상"
+#         url: "/daily"

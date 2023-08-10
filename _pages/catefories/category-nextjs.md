@@ -1,10 +1,10 @@
 ---
-title: "Resolving Errors"
+title: "NextJS"
 layout: archive
-permalink: categories/errors
+permalink: categories/nextjs
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.error %}
+{% assign posts = site.categories.NextJS %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
