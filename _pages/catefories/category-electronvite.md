@@ -1,7 +1,7 @@
 ---
 title: "Electron-Vite"
 layout: archive
-permalink: categories/electronvite
+permalink: categories/electron-vite
 author_profile: true
 sidebar_main: true
 ---

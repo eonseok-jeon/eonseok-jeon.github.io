@@ -107,7 +107,6 @@ author:
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "오늘을 즐기쟈 :)"
   location: "Goyang, Korea"
-  email: "jseokeon@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
