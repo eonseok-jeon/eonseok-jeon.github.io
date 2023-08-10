@@ -1,13 +1,13 @@
 ---
 layout: archive
-permalink: /tags/
-title: "Posts by Tag"
+permalink: /errors/
+title: "Resolve Errors"
 author_profile: true
 ---
 
-{% include group-by-array collection=site.posts field="tags" %}
+{% include group-by-array collection=site.posts field="errors" %}
 <ul>
-  {% for tag in site.tags %}
+  {% for tag in site.errors %}
   <span>
     <a href="#{{ tag | first }}"> {{ tag | first }} </a> &nbsp;&nbsp;&nbsp;
   </span>
@@ -16,6 +16,6 @@ author_profile: true
 <br />
 <br />
 {% for tag in group_names %} {% assign posts = group_items[forloop.index0] %}
-<h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+<h2 id="{{ errors | slugify }}" class="archive__subtitle">{{ errors }}</h2>
 {% for post in posts %} {% include archive-single.html %} {% endfor %} {% endfor
 %}
