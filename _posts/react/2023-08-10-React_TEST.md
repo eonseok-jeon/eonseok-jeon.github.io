@@ -1,10 +1,10 @@
 ---
-title: "test_error"
+title: "React 테스트용"
 
 categories:
-  - error
+  - React
 tags:
-  - [error]
+  - [React]
 
 toc: true
 toc_sticky: true
@@ -12,5 +12,3 @@ toc_sticky: true
 date: 2023-08-10
 last_modified_at: 2023-08-10
 ---
-
-### Errors TEST를 하는 중
