@@ -90,7 +90,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "IDoNotWannaStudy" %}
-                        <li><a href="/categories/idonotwannastudy" class="">IDoNotWannaStudy ({{category[1].size}})</a></li>
+                        <li><a href="/categories/i-do-not-wanna-study" class="">IDoNotWannaStudy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
