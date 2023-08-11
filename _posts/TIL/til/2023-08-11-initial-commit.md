@@ -131,6 +131,7 @@ export default defineConfig({
 - .editorconfig 설정
 - .eslintrc.json 설정
 - .stylelintrc.json 설정
+- .prettierrc 설정
 
 ### 6. .gitignore 설정
 
