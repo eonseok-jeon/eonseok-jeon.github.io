@@ -27,7 +27,7 @@ last_modified_at: 2023-08-11
 - head 메타 정보 수정
 - favicon 수정
 - package.json name, description, author 등 정보 수정
-- ~(bulid 코드 추가)~
+- ~~(bulid 코드 추가)~~
 
 ### 3. css 초기화 및 gloabal css 적용
 
