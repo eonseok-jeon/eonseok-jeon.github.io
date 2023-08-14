@@ -1,5 +1,5 @@
 ---
-title: "EC2를 이용하여 NextJS 배포해 보기"
+title: "[NextJS] EC2를 이용하여 NextJS 배포해 보기"
 
 categories:
   - Next

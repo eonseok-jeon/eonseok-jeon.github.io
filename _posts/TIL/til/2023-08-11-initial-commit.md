@@ -1,5 +1,5 @@
 ---
-title: "초기 세팅"
+title: "[TIL] 초기 세팅"
 
 categories:
   - TIL
