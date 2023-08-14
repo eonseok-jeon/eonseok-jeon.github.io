@@ -2,9 +2,9 @@
 title: "EC2를 이용하여 NextJS 배포해 보기"
 
 categories:
-  - NextJS
+  - Next
 tags:
-  - [NextJS]
+  - [Next]
 
 toc: true
 toc_sticky: true

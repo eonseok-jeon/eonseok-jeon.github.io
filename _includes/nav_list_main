@@ -67,8 +67,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "NextJS" %}
-                        <li><a href="/categories/nextjs" class="">NextJS ({{category[1].size}})</a></li>
+                    {% if category[0] == "Next" %}
+                        <li><a href="/categories/next" class="">NextJS ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
