@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2023-08-14
-last_modified_at: 2023-08-14
+last_modified_at: 2023-08-22
 ---
 
 # NextJS EC2를 이용하여 배포
@@ -115,8 +115,7 @@ main을 직접적으로 건드리는 거라 진짜 이 방법은 쓰고 싶지 �
 
 <img width="1403" alt="스크린샷 2023-08-14 오전 3 29 49" src="https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/310fddf2-762c-445c-8fcd-57498a3b0ca5">
 
-~~히히 진짜 죽고싶당😋~~  
-도대체 헤더 어디갔지??
+도대체 헤더 어디갔지?? ~~히히 진짜 죽고싶당😋~~
 
 진짜 이건 안 되겠다, 그냥 develop 고대로 복붙해서 main에 넣어줘야겠다
 
@@ -138,3 +137,52 @@ npm run build하고 npm run start만 하면 build 끝나는데
 수많은 에러들의 환대에 어질어질해진다,,,💩
 
 일단 출근하고, 다시 해봐야겠다,,
+
+## 재도전
+
+일단 type 에러 나는 모든 부분을 수정해 주었다
+
+그런 다음 다시 build를 진행해 보았다
+
+그러자 또 새로운 에러가 발생하였다,,😧  
+![스크린샷 2023-08-20 오전 12 37 08](https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/66669282-d8e8-4b6e-ba57-581eeccc0a10)
+
+처음엔 동적으로 주소 받는건데 getStaticPaths 안 해줘서 그런가? 하고 코드 작성을 해줬지만 여전히 오류가 발생하였다  
+그래서 오류가 발생하는 파일로 가서, 하나하나 코드를 주석처리 하면서 오류가 없어질 때를 기다려 보았다
+
+![스크린샷 2023-08-20 오후 5 08 40](https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/9a362de9-e967-40e6-bf7d-4f359b807ad6)  
+결국 그렇게 오류를 찾아냈고, selectedImage 옆에 `instanceof File` 코드를 추가해줘서 발생한 오류였다  
+이유는 머리를 너무 많이 썼더니 어지러워져서 일단 찾지 않았고, 저 부분 삭제하고 바로 npm run build 해주었다
+
+build 성공,,!!!!!!!!!!!!! 응애 💃🏻
+
+npm run start을 해준뒤, ec2 public IP 주소로 접속을 해보았다
+
+![스크린샷 2023-08-20 오후 5 21 29](https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/e726315b-f7e6-4e0e-a54c-81d5c2d155d1)  
+바로 이거지!
+
+슬플 때 웃는 난 어쩌면 1류일지도,,?
+
+원인을 찾아보니 보안 그룹을 설정해 줘야 한다고,,,!!!
+
+![스크린샷 2023-08-22 오후 11 02 00](https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/137b7548-3354-4348-bdbd-be86b44347ca)  
+처음에는 http만 0.0.0.0으로 모두가 들어올 수 있게 해주었다 -> 실패!  
+그럼 https도,,? -> 실패!  
+아 내 IP 주소를 설정 안 해줘서 그런가?! -> 실패!
+아 오케이,,! 진짜 알았다,, 포트번호 3000번 안 열어줘서 그랬음!! -> 실패!
+
+ㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜ ec2 폭파시켜도 합법,,
+
+몇 시간 동안 구글링 해서 결국 이유를 찾아냈다,,!!!
+
+```bash
+sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+```
+
+80번 포트 접근을 3000번 포트 접근으로 보내주는 포트포워딩 설정이 필요했던 것이다,,,,
+
+동적 ip 주소 설정한 뒤, 접속을 해보았다
+
+![스크린샷 2023-08-22 오후 11 11 31](https://github.com/eonseok-jeon/test_electron-vite/assets/121864459/ba26ce52-995e-4939-a94d-4379ebe89199)
+
+야호 💃🏻🕺🏻💃🏻🕺🏻💃🏻🕺🏻💃🏻🕺🏻💃🏻🕺🏻💃🏻🕺🏻👯‍♀️👯‍♀️👯‍♀️👯‍♀️👯‍♀️
