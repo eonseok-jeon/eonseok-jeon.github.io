@@ -1,5 +1,5 @@
 ---
-title: "[React] minLength not working"
+title: "[React] minLength not working (진행중)"
 
 categories:
   - React

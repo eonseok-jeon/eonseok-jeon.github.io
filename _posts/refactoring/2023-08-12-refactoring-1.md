@@ -1,5 +1,5 @@
 ---
-title: "[Refactor] NextJS 페이지 분할"
+title: "[Refactor] NextJS 페이지 분할 (진행중)"
 
 categories:
   - refactoring
