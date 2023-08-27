@@ -148,6 +148,30 @@ const selectFinishedHandler = () => {
 
 구현 성공,,!!! 🤗
 
+### cmd 클릭
+
+```javascript
+if (e.ctrlKey || e.metaKey) {
+  if (selectedID.includes(id))
+    setSelectedID((prev) => prev.filter((item) => item !== id));
+
+  return setSelectedID((prev) => [...prev, DUMMY_LIST[idx].id]);
+}
+```
+
+이렇게 이미 선택된 파일이었으면 다시 선택 취소 시키고, 아니었으면 선택하도록 하였다  
+하지만 어찌된 영문인지, 취소가 안 되었다
+
+이유,, : setSelectedID를 return 해주지 않아, 아래에 있는 setSelectedID도 실행이 된 것이다
+
+```javascript
+if (selectedID.includes(id)) return setSelectedID(prev => return prev.filter(item => item !== id));
+```
+
+이렇게 수정을 해주니, 작동을 잘 하게 되었다
+
+구현 성공!! 😽
+
 ### shift 클릭
 
 - 아무것도 클릭되지 않은 상태에서의 shift 클릭
