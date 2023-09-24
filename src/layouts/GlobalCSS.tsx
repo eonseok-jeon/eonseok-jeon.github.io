@@ -129,6 +129,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     line-height: 1.2;
     font-weight: 400;
+    letter-spacing: 1;
     color: #ddd;
   }
 `;

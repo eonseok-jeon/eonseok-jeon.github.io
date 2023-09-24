@@ -29,7 +29,9 @@ const config: GatsbyConfig = {
         ]
       }
     },
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp'
   ]
 };
 
