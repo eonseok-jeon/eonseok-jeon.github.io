@@ -15,9 +15,9 @@ const config: GatsbyConfig = {
       options: {
         alias: {
           '@components': 'src/components',
+          '@assets': 'src/assets',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
-          '@sass': 'src/sass',
           '@templates': 'src/templates',
           '@posts': 'content/posts'
         },
