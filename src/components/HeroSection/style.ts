@@ -6,7 +6,7 @@ const HeroContainer = styled(Container)`
   flex-direction: column;
   /* max-width: 121.6rem; */
   /* max-width: 120rem; */
-  height: 100vh;
+  height: calc(100vh - 14.6rem);
   margin: 0 auto 0;
 `;
 
