@@ -7,6 +7,7 @@ const Main = styled.main`
   /* max-width: 120rem; */
   padding: 0 5rem;
   width: 100%;
+  height: 100vh;
   margin: 0 auto 0;
 `;
 

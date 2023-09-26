@@ -121,7 +121,6 @@ const GlobalStyle = createGlobalStyle`
   /* Global CSS */
   body {
     max-width: 1440px;
-    min-height: 100vh;
     margin: 0 auto;
     padding: 0 20px;
     background-color: black;
@@ -131,6 +130,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     letter-spacing: 1;
     color: #ddd;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera*/
+    }
   }
 `;
 
