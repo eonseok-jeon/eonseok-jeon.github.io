@@ -6,8 +6,10 @@ import MainNav from '@layouts/MainNav';
 const IndexPage = () => {
   return (
     <GlobalCSS>
-      <MainNav />
-      <HeroSection />
+      <main>
+        <MainNav />
+        <HeroSection />
+      </main>
     </GlobalCSS>
   );
 };
