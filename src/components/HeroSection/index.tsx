@@ -1,12 +1,13 @@
 import React from 'react';
 import * as S from './style';
+import { SubTitle } from '@templates/ReusableCSS';
 
 /** Main Page Hero Section */
 const HeroSection = () => {
   return (
-    <S.Main>
+    <S.HeroContainer>
       <S.IntroductionBox>
-        <S.SubTitle>Hello World!</S.SubTitle>
+        <SubTitle>Hello World!</SubTitle>
         <S.MainTitle>Thanks For Visiting My Web Page</S.MainTitle>
         <S.DescriptionBox>
           <p>Welcome to my personal corner.</p>
@@ -16,7 +17,7 @@ const HeroSection = () => {
         </S.DescriptionBox>
       </S.IntroductionBox>
       <S.ExploreBtn>Explore</S.ExploreBtn>
-    </S.Main>
+    </S.HeroContainer>
   );
 };
 

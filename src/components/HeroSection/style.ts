@@ -1,12 +1,11 @@
 import styled from 'styled-components';
+import { Container } from '@templates/ReusableCSS';
 
-const Main = styled.main`
+const HeroContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   /* max-width: 121.6rem; */
   /* max-width: 120rem; */
-  padding: 0 5rem;
-  width: 100%;
   height: 100vh;
   margin: 0 auto 0;
 `;
@@ -17,11 +16,6 @@ const IntroductionBox = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 41.2rem;
-`;
-
-const SubTitle = styled.h3`
-  font-size: 3.2rem;
-  font-weight: 500;
 `;
 
 const MainTitle = styled.h1`
@@ -101,9 +95,8 @@ const ExploreBtn = styled.button`
 `;
 
 export {
-  Main,
+  HeroContainer,
   IntroductionBox,
-  SubTitle,
   MainTitle,
   DescriptionBox,
   ExploreBtn
