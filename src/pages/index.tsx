@@ -1,4 +1,5 @@
 import * as React from 'react';
+import FeatureSection from '@components/FeatureSection';
 import HeroSection from '@components/HeroSection';
 import GlobalCSS from '@layouts/GlobalCSS';
 import MainNav from '@layouts/MainNav';
@@ -9,6 +10,7 @@ const IndexPage = () => {
       <main>
         <MainNav />
         <HeroSection />
+        <FeatureSection />
       </main>
     </GlobalCSS>
   );

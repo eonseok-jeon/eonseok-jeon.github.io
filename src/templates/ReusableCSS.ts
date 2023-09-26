@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   width: 100%;
-  padding: 0 5rem;
+  padding: 0 10rem;
 `;
 
 const SubTitle = styled.h3`
