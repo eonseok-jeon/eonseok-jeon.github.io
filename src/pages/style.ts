@@ -3,7 +3,10 @@ import styled from 'styled-components';
 const Main = styled.main`
   display: flex;
   flex-direction: column;
-  width: 121.6rem;
+  /* max-width: 121.6rem; */
+  /* max-width: 120rem; */
+  padding: 0 5rem;
+  width: 100%;
   margin: 0 auto 0;
 `;
 

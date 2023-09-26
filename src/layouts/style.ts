@@ -7,7 +7,8 @@ const MainNavigation = styled.nav`
   justify-content: space-between;
   width: 100%;
   height: 14.6rem;
-  padding: 0 9.8rem;
+  padding: 0 5rem;
+  /* margin: 0 9.8rem; */
 `;
 
 const MainLogoBox = styled(Link)`
