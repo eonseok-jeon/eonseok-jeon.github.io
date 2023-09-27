@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Container } from '@templates/ReusableCSS';
 
@@ -29,7 +30,7 @@ const DescriptionBox = styled.div`
   letter-spacing: .2rem;
 `;
 
-const ExploreBtn = styled.button`
+const ExploreBtn = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -16,7 +16,7 @@ const HeroSection = () => {
           <p>Dive in and explore with delight!</p>
         </S.DescriptionBox>
       </S.IntroductionBox>
-      <S.ExploreBtn>Explore</S.ExploreBtn>
+      <S.ExploreBtn to="#post-preview-list">Explore</S.ExploreBtn>
     </S.HeroContainer>
   );
 };

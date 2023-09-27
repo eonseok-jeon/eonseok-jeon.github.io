@@ -6,7 +6,7 @@ import * as S from './style';
 /** Main Page Feature Section */
 const FeatureSection = () => {
   return (
-    <S.FeatureContainer>
+    <S.FeatureContainer id="post-preview-list">
       <SubTitle>Total (49)</SubTitle>
       <S.PostList>
         <PostPreview />
