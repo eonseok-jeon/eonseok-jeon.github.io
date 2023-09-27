@@ -38,7 +38,7 @@ const TagBox = styled.div`
 const PostInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .4rem;
+  gap: .8rem;
   justify-content: center;
   margin-top: .8rem;
 `;
@@ -47,18 +47,17 @@ const PostTitleBox = styled.div`
   display: flex;
   gap: .4rem;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
 `;
 
 const PostSubTitleParagraph = styled.p`
-  font-size: .8rem;
+  font-size: 1.4rem;
   color: #aaa;
 `;
 
 const PostDateParagraph = styled.p`
   margin-left: auto;
-  font-size: .4rem;
   color: #777;
 `;
 

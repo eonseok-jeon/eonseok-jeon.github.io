@@ -8,12 +8,12 @@ const PostPreview = () => {
     <li>
       <S.PostArticle>
         <S.PostImgBox>
-          <StaticImage src="../../assets/imgs/test.png" alt="img" width={240} height={184} />
+          <StaticImage src="../../assets/imgs/test.png" alt="img" width={240} height={160} />
           <S.TagBox>React</S.TagBox>
         </S.PostImgBox>
         <S.PostInfoBox>
           <S.PostTitleBox>
-            <StaticImage src="../../assets/icons/reactIc.svg" alt="img" />
+            <StaticImage src="../../assets/icons/reactIc.svg" alt="img" width={20} height={20} />
             <p>제목</p>
           </S.PostTitleBox>
           <S.PostSubTitleParagraph>소제목</S.PostSubTitleParagraph>
