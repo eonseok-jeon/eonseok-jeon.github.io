@@ -14,8 +14,9 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {
-          '@components': 'src/components',
           '@assets': 'src/assets',
+          '@components': 'src/components',
+          '@hooks': 'src/hooks',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
           '@templates': 'src/templates',

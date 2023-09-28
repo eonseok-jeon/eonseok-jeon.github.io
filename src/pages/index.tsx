@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import FeatureSection from '@components/FeatureSection';
 import HeroSection from '@components/HeroSection';
 import GlobalCSS from '@layouts/GlobalCSS';
 import MainNav from '@layouts/MainNav';
+import useStickyNav from '@hooks/useStickyNav';
 
 const IndexPage = () => {
-  const [isSticky, setIsSticky] = useState(false);
-
-  const stickyNav = () => {
-    const stickyStartPoint = window.innerHeight - 80;
-
-    if (window !== undefined) {
-      window.scrollY > stickyStartPoint ? setIsSticky(true) : setIsSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', stickyNav);
-
-    return () => window.removeEventListener('scroll', stickyNav);
-  }, []);
+  const { isSticky } = useStickyNav();
 
   return (
     <GlobalCSS>

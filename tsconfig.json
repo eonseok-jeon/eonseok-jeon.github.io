@@ -100,8 +100,9 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],
-      "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@templates/*": ["src/templates/*"],
