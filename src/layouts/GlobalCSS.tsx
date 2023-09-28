@@ -126,7 +126,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 20px;
     background-color: black;
     font-family: sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 1;
