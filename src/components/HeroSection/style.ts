@@ -2,13 +2,17 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Container } from '@templates/ReusableCSS';
 
-const HeroContainer = styled(Container)`
+interface IHeroContainerProps {
+  isSticky: boolean;
+}
+
+const HeroContainer = styled(Container)<IHeroContainerProps>`
   display: flex;
   flex-direction: column;
   /* max-width: 121.6rem; */
   /* max-width: 120rem; */
   height: calc(100vh - 14.6rem);
-  margin: 0 auto 0;
+  margin: ${({ isSticky }) => isSticky ? '14.6rem auto 0' : '0 auto'};
 `;
 
 const IntroductionBox = styled.div`
@@ -102,3 +106,5 @@ export {
   DescriptionBox,
   ExploreBtn
 };
+
+/* as */

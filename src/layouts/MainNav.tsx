@@ -4,9 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as S from './style';
 
 /** Main Navigation */
-const MainNav = () => {
+const MainNav = ({ isSticky }: { isSticky: boolean }) => {
   return (
-    <S.MainNavigation>
+    <S.MainNavigation sticky={isSticky}>
       <S.MainLogoBox to="/">
         <StaticImage src="../assets/icons/mainLogo.svg" alt="main-logo" />
         <p>Eon-Seok&apos;s Devlog</p>

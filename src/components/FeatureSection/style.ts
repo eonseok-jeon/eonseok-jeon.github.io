@@ -6,7 +6,7 @@ const FeatureContainer = styled(Container)`
   gap: 1.6rem;
   flex-direction: column;
   justify-content: center;
-  padding-top: 7rem;
+  padding-top: 12rem;
 `;
 
 const PostList = styled.ul`
