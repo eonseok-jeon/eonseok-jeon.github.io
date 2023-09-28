@@ -21,5 +21,3 @@ export {
   MainTitle,
   SubTitle
 };
-
-/* for test */
