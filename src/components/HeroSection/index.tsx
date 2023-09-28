@@ -3,9 +3,9 @@ import * as S from './style';
 import { SubTitle } from '@templates/ReusableCSS';
 
 /** Main Page Hero Section */
-const HeroSection = () => {
+const HeroSection = ({ isSticky }: { isSticky: boolean }) => {
   return (
-    <S.HeroContainer>
+    <S.HeroContainer isSticky={isSticky}>
       <S.IntroductionBox>
         <SubTitle>Hello World!</SubTitle>
         <S.MainTitle>Thanks For Visiting My Web Page</S.MainTitle>
