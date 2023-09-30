@@ -38,7 +38,7 @@ const TagBox = styled.div`
 const PostInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .8rem;
+  gap: .4rem;
   justify-content: center;
   margin-top: .8rem;
 `;
