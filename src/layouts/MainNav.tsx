@@ -12,29 +12,29 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
         <p>Eon-Seok&apos;s Devlog</p>
       </S.MainLogoBox>
       <S.CategoryList>
-        <li>
+        <S.CategoryItem>
           <Link to="#">All</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <Link to="#">Algorithm</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <Link to="#">Code</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <Link to="#">CS</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <Link to="#">Language</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <Link to="#">Review</Link>
-        </li>
-        <li>
+        </S.CategoryItem>
+        <S.CategoryItem>
           <button>
             <StaticImage src="../assets/icons/searchIc.svg" alt="search-icon" />
           </button>
-        </li>
+        </S.CategoryItem>
       </S.CategoryList>
     </S.MainNavigation>
   );

@@ -36,8 +36,38 @@ const CategoryList = styled.ul`
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+`;
 
-  li, button { 
+const CategoryItem = styled.li`
+  position: relative;
+  padding: .2rem 0;
+
+  a::before, a::after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: .2rem;
+    content: '';
+    background: #ddd;
+    transition: all 0.3s;
+  }
+  
+  a::before {
+    right: 0;
+    top: -0.2rem;
+  }
+
+  a::after {
+    left: 0;
+    bottom: 0;
+  }
+  
+  a:hover::before, a:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+
+  button {
     cursor: pointer;
   }
 `;
@@ -45,5 +75,6 @@ const CategoryList = styled.ul`
 export {
   MainNavigation,
   MainLogoBox,
-  CategoryList
+  CategoryList,
+  CategoryItem
 };
