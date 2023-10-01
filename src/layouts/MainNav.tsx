@@ -33,6 +33,9 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
               <li data-hover="Refactoring">
                 <Link to="#">Refactoring</Link>
               </li>
+              <li data-hover="TIL">
+                <Link to="#">TIL</Link>
+              </li>
             </S.SubCategoryList>
           )}
         </S.CategoryItem>
