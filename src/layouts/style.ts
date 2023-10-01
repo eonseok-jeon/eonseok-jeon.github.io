@@ -36,14 +36,98 @@ const CategoryList = styled.ul`
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+`;
 
-  li, button { 
+const CategoryItem = styled.li`
+  position: relative;
+  padding: .2rem 0;
+
+  button {
     cursor: pointer;
+  }
+`;
+
+const CategoryLink = styled(Link)`
+  &::before, &::after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: .2rem;
+    content: '';
+    background: #ddd;
+    transition: all 0.3s;
+  }
+  
+  &::before {
+    right: 0;
+    top: -0.2rem;
+  }
+
+  &::after {
+    left: 0;
+    bottom: 0;
+  }
+  
+  &:hover::before, &:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+`;
+
+const SubCategoryList = styled.ul`
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  justify-content: center;
+  margin-top: 2.36rem;
+  padding-top: .7rem;
+  background-color: #000;
+
+  li {
+    position: relative;
+    padding: .5rem 1.2rem .5rem .5rem;
+    color: #777;
+    border-radius: .5rem;
+    text-shadow: none;
+    transition: all .3s ease;
+  }
+
+  li:hover {
+    background-color: #555;
+  }
+
+  li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    padding: .5rem 1.2rem .5rem .5rem;
+    content: attr(data-hover);
+    color: #ddd;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: max-width .5s ease-out;
+    -moz-transition: max-width .5s ease-out;
+    transition: max-width .5s ease-out;
+  }
+
+  li:hover::before,
+  li:focus::before {
+    max-width: 100%;
+    opacity: 1;
   }
 `;
 
 export {
   MainNavigation,
   MainLogoBox,
-  CategoryList
+  CategoryList,
+  CategoryItem,
+  CategoryLink,
+  SubCategoryList
 };
