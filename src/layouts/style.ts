@@ -42,7 +42,13 @@ const CategoryItem = styled.li`
   position: relative;
   padding: .2rem 0;
 
-  a::before, a::after {
+  button {
+    cursor: pointer;
+  }
+`;
+
+const CategoryLink = styled(Link)`
+  &::before, &::after {
     position: absolute;
     opacity: 0;
     width: 0%;
@@ -52,29 +58,36 @@ const CategoryItem = styled.li`
     transition: all 0.3s;
   }
   
-  a::before {
+  &::before {
     right: 0;
     top: -0.2rem;
   }
 
-  a::after {
+  &::after {
     left: 0;
     bottom: 0;
   }
   
-  a:hover::before, a:hover::after {
+  &:hover::before, &:hover::after {
     opacity: 1;
     width: 100%;
   }
 
-  button {
-    cursor: pointer;
-  }
+`;
+
+const SubCategoryList = styled.ul`
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 2.3rem;
+  padding-top: .7rem;
 `;
 
 export {
   MainNavigation,
   MainLogoBox,
   CategoryList,
-  CategoryItem
+  CategoryItem,
+  CategoryLink,
+  SubCategoryList
 };

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as S from './style';
 
 /** Main Navigation */
 const MainNav = ({ isSticky }: { isSticky: boolean }) => {
+  const [subCategory, setSubCategory] = useState('');
+
   return (
     <S.MainNavigation sticky={isSticky}>
       <S.MainLogoBox to="/">
@@ -13,22 +15,79 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
       </S.MainLogoBox>
       <S.CategoryList>
         <S.CategoryItem>
-          <Link to="#">All</Link>
+          <S.CategoryLink to="#">All</S.CategoryLink>
         </S.CategoryItem>
         <S.CategoryItem>
-          <Link to="#">Algorithm</Link>
+          <S.CategoryLink to="#">Algorithm</S.CategoryLink>
+        </S.CategoryItem>
+        <S.CategoryItem
+          onMouseEnter={() => { setSubCategory('code'); }}
+          onMouseLeave={() => { setSubCategory(''); }}
+        >
+          <S.CategoryLink to="#">Code</S.CategoryLink>
+          {subCategory === 'code' && (
+            <S.SubCategoryList>
+              <li>
+                <Link to="#">Clean coding</Link>
+              </li>
+              <li>
+                <Link to="#">Refactoring</Link>
+              </li>
+            </S.SubCategoryList>
+          )}
+        </S.CategoryItem>
+        <S.CategoryItem
+          onMouseEnter={() => { setSubCategory('cs'); }}
+          onMouseLeave={() => { setSubCategory(''); }}
+        >
+          <S.CategoryLink to="#">CS</S.CategoryLink>
+          {subCategory === 'cs' && (
+            <S.SubCategoryList>
+              <li>
+                <Link to="#">Computer Architecture</Link>
+              </li>
+              <li>
+                <Link to="#">Computer Network</Link>
+              </li>
+            </S.SubCategoryList>
+          )}
+        </S.CategoryItem>
+        <S.CategoryItem
+          onMouseEnter={() => { setSubCategory('language'); }}
+          onMouseLeave={() => { setSubCategory(''); }}
+        >
+          <S.CategoryLink to="#">Language</S.CategoryLink>
+          {subCategory === 'language' && (
+            <S.SubCategoryList>
+              <li>
+                <Link to="#">HTML</Link>
+              </li>
+              <li>
+                <Link to="#">CSS</Link>
+              </li>
+              <li>
+                <Link to="#">JavaScript</Link>
+              </li>
+              <li>
+                <Link to="#">TypeScript</Link>
+              </li>
+              <li>
+                <Link to="#">React</Link>
+              </li>
+              <li>
+                <Link to="#">NextJS</Link>
+              </li>
+              <li>
+                <Link to="#">Gatsby</Link>
+              </li>
+              <li>
+                <Link to="#">Electron-vite</Link>
+              </li>
+            </S.SubCategoryList>
+          )}
         </S.CategoryItem>
         <S.CategoryItem>
-          <Link to="#">Code</Link>
-        </S.CategoryItem>
-        <S.CategoryItem>
-          <Link to="#">CS</Link>
-        </S.CategoryItem>
-        <S.CategoryItem>
-          <Link to="#">Language</Link>
-        </S.CategoryItem>
-        <S.CategoryItem>
-          <Link to="#">Review</Link>
+          <S.CategoryLink to="#">Review</S.CategoryLink>
         </S.CategoryItem>
         <S.CategoryItem>
           <button>
