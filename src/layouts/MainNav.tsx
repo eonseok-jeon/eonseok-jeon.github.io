@@ -27,10 +27,10 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
           <S.CategoryLink to="#">Code</S.CategoryLink>
           {subCategory === 'code' && (
             <S.SubCategoryList>
-              <li>
+              <li data-hover="Clean coding">
                 <Link to="#">Clean coding</Link>
               </li>
-              <li>
+              <li data-hover="Refactoring">
                 <Link to="#">Refactoring</Link>
               </li>
             </S.SubCategoryList>
@@ -43,10 +43,10 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
           <S.CategoryLink to="#">CS</S.CategoryLink>
           {subCategory === 'cs' && (
             <S.SubCategoryList>
-              <li>
+              <li data-hover="Computer Architecture">
                 <Link to="#">Computer Architecture</Link>
               </li>
-              <li>
+              <li data-hover="Computer Network">
                 <Link to="#">Computer Network</Link>
               </li>
             </S.SubCategoryList>
@@ -59,28 +59,28 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
           <S.CategoryLink to="#">Language</S.CategoryLink>
           {subCategory === 'language' && (
             <S.SubCategoryList>
-              <li>
+              <li data-hover="HTML">
                 <Link to="#">HTML</Link>
               </li>
-              <li>
+              <li data-hover="CSS">
                 <Link to="#">CSS</Link>
               </li>
-              <li>
+              <li data-hover="JavaScript">
                 <Link to="#">JavaScript</Link>
               </li>
-              <li>
+              <li data-hover="TypeScript">
                 <Link to="#">TypeScript</Link>
               </li>
-              <li>
+              <li data-hover="React">
                 <Link to="#">React</Link>
               </li>
-              <li>
+              <li data-hover="NextJS">
                 <Link to="#">NextJS</Link>
               </li>
-              <li>
+              <li data-hover="Gatsby">
                 <Link to="#">Gatsby</Link>
               </li>
-              <li>
+              <li data-hover="Electron-vite">
                 <Link to="#">Electron-vite</Link>
               </li>
             </S.SubCategoryList>
