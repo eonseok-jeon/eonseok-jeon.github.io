@@ -138,6 +138,17 @@ const GlobalStyle = createGlobalStyle`
       display: none; /* Chrome, Safari, Opera*/
     }
   }
+
+  pre {
+    width: 100%;
+    overflow: scroll;
+    margin: 2rem 0;
+    padding: 2rem 4rem 2rem 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #555;
+  }
 `;
 
 /** global CSS */
