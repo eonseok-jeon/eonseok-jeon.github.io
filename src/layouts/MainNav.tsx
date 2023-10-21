@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Modal from '@components/Modal';
@@ -10,6 +10,17 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
   const [subCategory, setSubCategory] = useState('');
   
   const { isModal, openModal, closeModal } = useModal();
+
+  useEffect(() => {
+    const close = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' || e.key === 'Escape') {
+        closeModal();
+      }
+    };
+    window.addEventListener('keydown', close);
+
+    return () => window.removeEventListener('keydown', close);
+  },[]);
 
   return (
     <>
