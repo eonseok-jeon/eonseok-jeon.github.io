@@ -5,7 +5,7 @@ const PostArticle = styled.article`
   height: 25.6rem;
   margin-bottom: 7rem;
   padding: .8rem;
-  background-color: rgb(85, 85, 85);
+  background-color: #555;
   border-radius: 1.2rem;
   cursor: pointer;
   transition: all .3s ease;
