@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Plan2 = () => {
   return (
@@ -13,7 +13,7 @@ const Plan2 = () => {
     >
       <StaticImage src="../../../assets/imgs/review/1/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>9월의 계획 점검</h2>
         <h3>GitHubPages 전체 리팩토링</h3>
         <p>흙흙,, 아직도 진행 중,,</p>
@@ -94,7 +94,7 @@ const Plan2 = () => {
 
         <h2>이젠 진짜 해야 해</h2>
         <p>10월 진짜 화이팅!🔥</p>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };

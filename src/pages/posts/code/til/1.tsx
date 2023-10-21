@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Til1 = () => {
   return (
@@ -13,7 +13,7 @@ const Til1 = () => {
     >
       <StaticImage src="../../../../assets/imgs/review/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>해야할 것</h2>
         <h3>1. 불필요한 파일들 삭제</h3>
         <p>모든 파일들 다 분석한 뒤, 현재 프로젝트에 필요 없는 파일들 삭제</p>
@@ -137,7 +137,7 @@ export default defineConfig({
 
         <h3>7. 별 오류 없길 빌기</h3>
         <p>제발,, 🙏</p>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };

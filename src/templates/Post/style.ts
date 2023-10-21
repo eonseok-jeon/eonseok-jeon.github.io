@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SubTitle } from '../ReusableCSS';
+import * as R from '../ReusableCSS';
 
 const PostArticle = styled.article`
   max-width: 120rem;
@@ -27,7 +27,7 @@ const PostMainTitleBox = styled.div`
   margin-bottom: 2rem;
 `;
 
-const PostSubTitle = styled(SubTitle)`
+const PostSubTitle = styled(R.SubTitle)`
   padding: 2rem 0;
   font-weight: 500;
   border-bottom: .1rem solid #ddd;

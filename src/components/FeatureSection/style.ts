@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Container } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
-const FeatureContainer = styled(Container)`
+const FeatureContainer = styled(R.Container)`
   display: flex;
   gap: 1.6rem;
   flex-direction: column;

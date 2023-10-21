@@ -1,13 +1,13 @@
 import React from 'react';
+import * as R from '@templates/ReusableCSS';
 import * as S from './style';
-import { SubTitle } from '@templates/ReusableCSS';
 
 /** Main Page Hero Section */
 const HeroSection = ({ isSticky }: { isSticky: boolean }) => {
   return (
     <S.HeroContainer isSticky={isSticky}>
       <S.IntroductionBox>
-        <SubTitle>Hello World!</SubTitle>
+        <R.SubTitle>Hello World!</R.SubTitle>
         <S.MainTitle>Thanks For Visiting My Web Page</S.MainTitle>
         <S.DescriptionBox>
           <p>Welcome to my personal corner.</p>

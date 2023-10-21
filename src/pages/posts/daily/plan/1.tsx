@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox, PostImgBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Plan1 = () => {
   return (
@@ -13,7 +13,7 @@ const Plan1 = () => {
     >
       <StaticImage src="../../../assets/imgs/review/1/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>난 원래 J였다,,</h2>
         <p>그동안 회사를 다니고, 사회에 찌들어 가면서, 점점 TP가 되어 가는 걸 느꼈지만,</p>
         <p>사실 난 J라고,,!!</p>
@@ -48,10 +48,10 @@ const Plan1 = () => {
         <p>미국 여행 비자 받기</p>
 
         <h3>바탕화면 및 핸드폰 갤러리 정리</h3>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/plan/1/1.png" alt="sopt-apply-complete" />
           <p>파일들이 너무 많아,,</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>인턴하면서 생긴 파일들 다 정리</p>
         <p>바빠서 정리 못한 사진 오백구천억개 정리</p>
 
@@ -60,7 +60,7 @@ const Plan1 = () => {
 
         <h2>할 수 있음</h2>
         <p>9월도 화이팅!🔥</p>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };

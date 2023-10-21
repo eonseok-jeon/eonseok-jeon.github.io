@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const CleanCoding1 = () => {
   return (
@@ -13,7 +13,7 @@ const CleanCoding1 = () => {
     >
       <StaticImage src="../../../assets/imgs/review/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>서론</h2>
         <p>umc 활동 중, 같이 코드를 짜는 한 팀원이 내 코드에 대한 피드백을 주었다 내용은 else 대신에 if로 수정하자는 것이었다</p>
         <p>처음 그 얘기를 들었을 때는 차이가 있나? 싶었다</p>
@@ -106,7 +106,7 @@ return colors[color] || []; // 여기서 color는 red or yellow
         
         <h3>삼향 연산자 이용하기</h3>
         <p>일단 지금은 너무 피곤해서 여기까지만 하고 나중에 추가로 정리해서 올려야겠다,,!</p>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };

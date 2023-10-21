@@ -1,12 +1,12 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Container } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 interface IHeroContainerProps {
   isSticky: boolean;
 }
 
-const HeroContainer = styled(Container)<IHeroContainerProps>`
+const HeroContainer = styled(R.Container)<IHeroContainerProps>`
   display: flex;
   flex-direction: column;
   /* max-width: 121.6rem; */
