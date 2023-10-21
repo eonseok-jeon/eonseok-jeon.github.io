@@ -152,4 +152,6 @@ export default defineConfig({
   );
 };
 
+export const Head = () => <title>electron-vite - alias path 설정</title>;
+
 export default ElectronVite1;

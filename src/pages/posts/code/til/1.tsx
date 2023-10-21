@@ -142,4 +142,6 @@ export default defineConfig({
   );
 };
 
+export const Head = () => <title>til - 초기 세팅</title>;
+
 export default Til1;

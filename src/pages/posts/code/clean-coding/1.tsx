@@ -111,4 +111,6 @@ return colors[color] || []; // 여기서 color는 red or yellow
   );
 };
 
+export const Head = () => <title>clean-coding - if else문 지양</title>;
+
 export default CleanCoding1;

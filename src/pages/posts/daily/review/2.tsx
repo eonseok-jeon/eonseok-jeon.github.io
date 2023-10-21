@@ -186,4 +186,6 @@ const Review2 = () => {
   );
 };
 
+export const Head = () => <title>review - 첫 인턴 활동을 마치며,,,</title>;
+
 export default Review2;

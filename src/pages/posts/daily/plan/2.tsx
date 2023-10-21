@@ -99,4 +99,6 @@ const Plan2 = () => {
   );
 };
 
+export const Head = () => <title>plan - 10월 계획</title>;
+
 export default Plan2;

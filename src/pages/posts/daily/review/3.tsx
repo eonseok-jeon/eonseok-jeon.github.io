@@ -109,4 +109,6 @@ const Review3 = () => {
   );
 };
 
+export const Head = () => <title>review - SOPT YB 지원</title>;
+
 export default Review3;

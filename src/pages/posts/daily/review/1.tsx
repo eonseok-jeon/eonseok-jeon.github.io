@@ -172,4 +172,6 @@ const Review1 = () => {
   );
 };
 
+export const Head = () => <title>review - UMC 4th 활동을 마치며,,,</title>;
+
 export default Review1;
