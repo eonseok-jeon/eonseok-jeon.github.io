@@ -93,6 +93,7 @@ const SubCategoryList = styled.ul`
     color: #777;
     border-radius: .5rem;
     text-shadow: none;
+    word-break: keep-all;
     transition: all .3s ease;
     cursor: pointer;
   }
