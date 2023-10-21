@@ -41,7 +41,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('code'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#">Code</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>Code</S.CategoryLink>
             {subCategory === 'code' && (
               <S.SubCategoryList>
                 <li data-hover="Clean coding" onClick={openModal}>
@@ -60,7 +60,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('cs'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#">CS</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>CS</S.CategoryLink>
             {subCategory === 'cs' && (
               <S.SubCategoryList>
                 <li data-hover="Computer Architecture" onClick={openModal}>
@@ -76,7 +76,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('language'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#">Language</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>Language</S.CategoryLink>
             {subCategory === 'language' && (
               <S.SubCategoryList>
                 <li data-hover="HTML" onClick={openModal}>
@@ -110,7 +110,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('review'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#">Review</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>Review</S.CategoryLink>
             {subCategory === 'review' && (
               <S.SubCategoryList>
                 <li data-hover="plan" onClick={openModal}>
