@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import * as R from '@templates/ReusableCSS';
 
 interface IHeroContainerProps {
@@ -33,6 +33,75 @@ const DescriptionBox = styled.div`
   font-size: 2.4rem;
   letter-spacing: .2rem;
   word-break: keep-all;
+`;
+
+interface ISecretAgeParagraphProps {
+  showAge: boolean;
+}
+
+const SecretAgeParagraph = styled.p<ISecretAgeParagraphProps>`
+  display: inline-block;
+  transition: opacity .5s ease;
+
+  ${({ showAge }) => showAge ?
+    css`
+      margin-left: 0;
+      pointer-events: auto;
+      visibility: visible;
+      opacity: 1;
+    ` : 
+    css`
+      margin-left: -10.2rem;
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+  `}
+`;
+
+interface ISecretParagraphProps {
+  showText: boolean;
+}
+
+const SecretParagraph = styled.p<ISecretParagraphProps>`
+  display: inline-block;
+  margin-left: 1rem;
+  color: #333;
+  opacity: ${({ showText }) => showText ? 1 : 0};
+  transition: all 1s ease;
+`;
+
+interface IExploreBoxProps {
+  btnHover: boolean;
+}
+
+const ExploreBox = styled.div<IExploreBoxProps>`
+  ${({ btnHover }) => btnHover &&
+    css`
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+  `}
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-0.1rem, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(.2rem, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-0.4rem, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(.4rem, 0, 0);
+    }
+  }
 `;
 
 const ExploreBtn = styled(Link)`
@@ -97,7 +166,7 @@ const ExploreBtn = styled(Link)`
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-}
+  }
 `;
 
 export {
@@ -105,6 +174,9 @@ export {
   IntroductionBox,
   MainTitle,
   DescriptionBox,
+  SecretAgeParagraph,
+  SecretParagraph,
+  ExploreBox,
   ExploreBtn
 };
 
