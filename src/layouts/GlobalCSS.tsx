@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   
   /* Reapply the pointer cursor for anchor tags */
   a, button {
-    cursor: revert;
+    cursor: pointer;
   }
   
   /* Remove list styles (bullets/numbers) */

@@ -11,7 +11,7 @@ const MainNavigation = styled.nav<IMainNavigationProps>`
   justify-content: space-between;
   width: 100%;
   padding: 0 5rem;
-  z-index: 999;
+  z-index: 10;
   
   position: ${({ sticky }) => sticky ? 'fixed' : ''};
   top: ${({ sticky }) => sticky ? '0' : ''};
