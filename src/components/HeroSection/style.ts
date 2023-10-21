@@ -32,6 +32,7 @@ const MainTitle = styled.h1`
 const DescriptionBox = styled.div`
   font-size: 2.4rem;
   letter-spacing: .2rem;
+  word-break: keep-all;
 `;
 
 const ExploreBtn = styled(Link)`
