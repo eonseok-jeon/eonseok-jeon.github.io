@@ -85,6 +85,7 @@ const SubCategoryList = styled.ul`
   margin-top: 2.36rem;
   padding-top: .7rem;
   background-color: #000;
+  border-radius: .5rem;
 
   li {
     position: relative;
@@ -93,6 +94,7 @@ const SubCategoryList = styled.ul`
     border-radius: .5rem;
     text-shadow: none;
     transition: all .3s ease;
+    cursor: pointer;
   }
 
   li:hover {
@@ -110,7 +112,6 @@ const SubCategoryList = styled.ul`
     content: attr(data-hover);
     color: #ddd;
     font-weight: 700;
-    cursor: pointer;
     -webkit-transition: max-width .5s ease-out;
     -moz-transition: max-width .5s ease-out;
     transition: max-width .5s ease-out;
