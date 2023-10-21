@@ -18,7 +18,7 @@ const ModalBox = styled.div`
   word-break: keep-all;
   background-color: #888;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 30;
 `;
 
 const DescriptionBox = styled.div`
@@ -46,16 +46,29 @@ const CloseButton = styled.button`
   }
 `;
 
+const OverlayBox = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+  z-index: 20;
+`;
+
 /** 모달창 */
 const Modal = () => {
   return (
-    <ModalBox>
-      <DescriptionBox>
-        <p>블로그 주인장의 현생 바쁨 이슈로 인해 아직 이 기능은 개발 중에 있습니다ㅜ 🥲</p>
-        <p>빠른 시일 내에 개발 완료해보도록 하겠습니다,,!!!!</p>
-      </DescriptionBox>
-      <CloseButton>응원하기</CloseButton>
-    </ModalBox>
+    <>
+      <ModalBox>
+        <DescriptionBox>
+          <p>블로그 주인장의 현생 바쁨 이슈로 인해 아직 이 기능은 개발 중에 있습니다ㅜ 🥲</p>
+          <p>빠른 시일 내에 개발 완료해보도록 하겠습니다,,!!!!</p>
+        </DescriptionBox>
+        <CloseButton>응원하기</CloseButton>
+      </ModalBox>
+      <OverlayBox />
+    </>
   );
 };
 
