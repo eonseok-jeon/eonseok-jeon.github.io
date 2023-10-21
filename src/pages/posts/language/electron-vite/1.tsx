@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const ElectronVite1 = () => {
   return (
@@ -13,7 +13,7 @@ const ElectronVite1 = () => {
     >
       <StaticImage src="../../../assets/imgs/review/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>외 않 되 ?!</h2>
 
         <p>회사에서 electron-vite를 이용하여, 데스크탑 어플리케이션을 만드니까, 초기 세팅을 하라고 하였다</p>
@@ -147,9 +147,11 @@ export default defineConfig({
         잘 작동을 하였다!
         
         진짜 제발 초기 코드는 다 분석을 해보쟈,,!!
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };
+
+export const Head = () => <title>electron-vite - alias path 설정</title>;
 
 export default ElectronVite1;

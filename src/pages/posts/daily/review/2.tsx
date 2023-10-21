@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox, PostImgBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Review2 = () => {
   return (
@@ -13,7 +13,7 @@ const Review2 = () => {
     >
       <StaticImage src="../../../../assets/imgs/review/2/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>인턴에 지원을 해봅시다</h2>
         <p>인턴 활동을 너무나도 하고 싶었었다</p>
         <p>저번 학기부터 지원을 했었지만, 다 떨어져서 할 수가 없었었다</p>
@@ -66,10 +66,10 @@ const Review2 = () => {
         <blockquote>축 합격! 🎉</blockquote>
         
         <h2>내 첫 직장</h2>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/4.png" alt="review-img-3-4" width={300} height={400} />
           <p>흥덕 IT 밸리</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>설렘 반, 긴장 반으로 6/22 목 첫 출근을 하였다</p>
         <p>10시 반까지 가야 했었는데, 처음 가는 길이고, 또 지각 하면 안 되니까, 아침 8시 전에 나갔었던 거 같다</p>
         <p>가는데만 2시간이라 꽤나 빡셌다</p>
@@ -84,10 +84,10 @@ const Review2 = () => {
         <p>그 덕에 제일 좋은 자리에 배정을 받았다</p>
         <p>후후,,, 정말 딴짓하기 딱 좋았다</p>
         <p>아무튼 뭘 해야 할 지 전혀 모르겠고, 다들 일 너무 열심히 하고 계서서 굉장히 뻘쭘했었다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/2.jpg" alt="review-img-3-2" width={300} height={400} />
           <p>제일 끝 자리 ㅋㅎ</p>
-        </PostImgBox>
+        </R.PostImgBox>
         
         <h2>실무,, 꽤나 어려운 걸,,?</h2>
         <p>나는 이번 회사를 다니는 동안 총 4개의 프로젝트를 맡았다</p>
@@ -106,10 +106,10 @@ const Review2 = () => {
         <p>이제까지 배워왔던 걸 다 적용해야 하는 프로젝트 였다</p>
         <p>실제 외주를 받은 프로젝트였고, 잘 했어야 했다</p>
         <p>결국 잘 하진 못했지만,,, ㅜㅜㅜ</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/3.jpg" alt="review-img-3-3" width={500} height={400} />
           <p>나의 와이어 프레임</p>
-        </PostImgBox>
+        </R.PostImgBox>
         
         <h2>이제 그만하고 싶어요</h2>
         <p>정말 두 달이 어떻게 흘러갔는지도 모르겠다</p>
@@ -161,29 +161,31 @@ const Review2 = () => {
         <p>나만 F야?ㅜㅜㅜㅜㅜ</p>
 
         <h2>다들 안녕~</h2>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/5.png" alt="review-img-3-5" width={300} height={600} />
           <p>마지막 퇴근</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>마지막으로 인사를 하고 퇴근을 찍었다</p>
         <p>정말 시원섭섭한 감정이 들었다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/6.png" alt="review-img-3-6" width={300} height={400} />
           <p>퇴근길 노을</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>그래도 정말 고생했다 나 자신!</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/2/7.png" alt="review-img-3-7" width={300} height={600} />
           <p>6월 근무 시간</p>
           <StaticImage src="../../../../assets/imgs/review/2/8.png" alt="review-img-3-8" width={300} height={600} />
           <p>7월 근무 시간</p>
           <StaticImage src="../../../../assets/imgs/review/2/9.png" alt="review-img-3-9" width={300} height={600} />
           <p>8월 근무 시간</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>이제 진짜 푹 쉬어야지~</p>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };
+
+export const Head = () => <title>review - 첫 인턴 활동을 마치며,,,</title>;
 
 export default Review2;

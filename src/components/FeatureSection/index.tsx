@@ -1,16 +1,16 @@
 import React from 'react';
-import PostPreview from '@templates/PostPreview';
-import { MainTitle, SubTitle } from '@templates/ReusableCSS';
-import * as S from './style';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import PostPreview from '@templates/PostPreview';
+import * as R from '@templates/ReusableCSS';
+import * as S from './style';
 
 /** Main Page Feature Section */
 const FeatureSection = () => {
   return (
     <S.FeatureContainer id="post-preview-list">
-      <MainTitle>My Posts</MainTitle>
-      <SubTitle>Total (49)</SubTitle>
+      <R.MainTitle>My Posts</R.MainTitle>
+      <R.SubTitle>Total (9)</R.SubTitle>
       <S.PostList>
 
         <Link to="/posts/daily/plan/2">

@@ -2,7 +2,7 @@ import React, { Children, PropsWithChildren } from 'react';
 import GlobalCSS from '@layouts/GlobalCSS';
 import MainNav from '@layouts/MainNav';
 import * as S from './style';
-import { MainTitle } from '../ReusableCSS';
+import * as R from '../ReusableCSS';
 
 interface IPostProps { 
   mainTitle: string;
@@ -21,7 +21,7 @@ const Post = ({ mainTitle, tag, date, subTitle, children }: PropsWithChildren<IP
       <S.PostArticle>
         <div>
           <S.PostMainTitleBox>
-            <MainTitle>{mainTitle}</MainTitle>
+            <R.MainTitle>{mainTitle}</R.MainTitle>
             <p>@{tag} / {date}</p>
           </S.PostMainTitleBox>
           {childrenArray[0]}

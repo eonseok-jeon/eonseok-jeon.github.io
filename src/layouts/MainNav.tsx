@@ -28,27 +28,27 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
       <S.MainNavigation sticky={isSticky}>
         <S.MainLogoBox to="/">
           <StaticImage src="../assets/icons/mainLogo.svg" alt="main-logo" />
-          <p>Eon-Seok&apos;s Devlog</p>
+          <p>개발 블로그</p>
         </S.MainLogoBox>
         <S.CategoryList>
           <S.CategoryItem>
-            <S.CategoryLink to="#post-preview-list">All</S.CategoryLink>
+            <S.CategoryLink to="#post-preview-list">전체</S.CategoryLink>
           </S.CategoryItem>
           <S.CategoryItem>
-            <S.CategoryLink to="#" onClick={openModal}>Algorithm</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>알고리즘</S.CategoryLink>
           </S.CategoryItem>
           <S.CategoryItem
             onMouseEnter={() => { setSubCategory('code'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#" onClick={openModal}>Code</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>코딩</S.CategoryLink>
             {subCategory === 'code' && (
               <S.SubCategoryList>
-                <li data-hover="Clean coding" onClick={openModal}>
-                  <Link to="#">Clean coding</Link>
+                <li data-hover="클린코딩" onClick={openModal}>
+                  <Link to="#">클린코딩</Link>
                 </li>
-                <li data-hover="Refactoring" onClick={openModal}>
-                  <Link to="#">Refactoring</Link>
+                <li data-hover="리팩토링" onClick={openModal}>
+                  <Link to="#">리팩토링</Link>
                 </li>
                 <li data-hover="TIL" onClick={openModal}>
                   <Link to="#">TIL</Link>
@@ -60,14 +60,14 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('cs'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#" onClick={openModal}>CS</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>컴퓨터</S.CategoryLink>
             {subCategory === 'cs' && (
               <S.SubCategoryList>
-                <li data-hover="Computer Architecture" onClick={openModal}>
-                  <Link to="#">Computer Architecture</Link>
+                <li data-hover="컴퓨터구조" onClick={openModal}>
+                  <Link to="#">컴퓨터구조</Link>
                 </li>
-                <li data-hover="Computer Network" onClick={openModal}>
-                  <Link to="#">Computer Network</Link>
+                <li data-hover="컴퓨터네트워크" onClick={openModal}>
+                  <Link to="#">컴퓨터네트워크</Link>
                 </li>
               </S.SubCategoryList>
             )}
@@ -76,7 +76,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('language'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#" onClick={openModal}>Language</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>언어</S.CategoryLink>
             {subCategory === 'language' && (
               <S.SubCategoryList>
                 <li data-hover="HTML" onClick={openModal}>
@@ -110,14 +110,14 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             onMouseEnter={() => { setSubCategory('review'); }}
             onMouseLeave={() => { setSubCategory(''); }}
           >
-            <S.CategoryLink to="#" onClick={openModal}>Review</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>일상</S.CategoryLink>
             {subCategory === 'review' && (
               <S.SubCategoryList>
-                <li data-hover="plan" onClick={openModal}>
-                  <Link to="#">plan</Link>
+                <li data-hover="계획" onClick={openModal}>
+                  <Link to="#">계획</Link>
                 </li>
-                <li data-hover="review" onClick={openModal}>
-                  <Link to="#">review</Link>
+                <li data-hover="회고" onClick={openModal}>
+                  <Link to="#">회고</Link>
                 </li>
               </S.SubCategoryList>
             )}

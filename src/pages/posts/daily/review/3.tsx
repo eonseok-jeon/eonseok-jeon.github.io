@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox, PostImgBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Review3 = () => {
   return (
@@ -13,7 +13,7 @@ const Review3 = () => {
     >
       <StaticImage src="../../../../assets/imgs/review/3/1.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>23.09.04 ~ 23.09.09 6일 남았다</h2>
         <p>드디어 SOPT YB 모집 공고가 떴다</p>
         <p>너무나도 가고 싶은 동아리였기에 빨리 모집 공고가 뜨길 바랬지만
@@ -82,10 +82,10 @@ const Review3 = () => {
         <p>18시 마감이었는데 17시 45분에 제출을 하였다</p>
         <p>다행히 피드백도 다 반영할 수 있었고, 글자 수도 다 채울 수 있었다</p>
         <p>정말 모든 걸 불태웠다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/3/1.png" alt="sopt-apply-complete" />
           <p>이제 결과만 기다리면 된다</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <h2>좀 더 잘할 수 있었을 텐데</h2>
         <p>막상 제출을 하고 나니 아쉬움이 생겼다</p>
         <p>더 잘 쓸 수 있었을 텐데,</p>
@@ -104,9 +104,11 @@ const Review3 = () => {
         <p>우리 팀원들 다 같이 붙어서 꼭 SOPT에서 만났으면 좋겠다</p>
         
         <blockquote>끝까지 같이 으쌰으쌰 해준 율카, 언노운, 옙방 그리고 마치 자기 일인 거 마냥 도와준 위즈에게 정말 감사드립니다</blockquote>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };
+
+export const Head = () => <title>review - SOPT YB 지원</title>;
 
 export default Review3;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Post from '@templates/Post';
-import { PostContentBox, PostImgBox } from '@templates/ReusableCSS';
+import * as R from '@templates/ReusableCSS';
 
 const Review1 = () => {
   return (
@@ -13,7 +13,7 @@ const Review1 = () => {
     >
       <StaticImage src="../../../../assets/imgs/review/1/2.png" alt="post-img" 
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
-      <PostContentBox>
+      <R.PostContentBox>
         <h2>지원 및 면접</h2>
         <p>2022년 말 드디어 정신을 차리고, 이대로 살면은 안 되겠단 생각이 강하게 빡 들어가지고, 할 수 있는 건 다해야겠다는 생각을 하였다</p>
         <p>그러던 중, UMC 4기 지원 공고가 동아리톡 방에 올라왔다</p>
@@ -41,10 +41,10 @@ const Review1 = () => {
         <p>진짜 농담 안 하고 너무 바빴다</p>
         <p>학교 수업 따라가기도 벅찬데, 방학 동안 진행하던 프로젝트 마무리를 못해서, 지금까지 끌고 가고 있는 상태였는데, 거기에 매주 스터디 준비하는 건 내게 쉽지 않은 일이었다</p>
         <p>스터디는 한 주 주제를 정해주면 그 부분을 공부하고 조사해서, 매 주 서로 검사를 하는 방식이었다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/1/1.png" alt="review-img-2-1" />
           <p>괜히 겉멋 들어서 영어로 작성해가지고는,,,</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>이건 1주차 때, 내가 정리한 내용들이다</p>
         <p>처음엔 정말 열심히 해보려고 하였다</p>
         <p>나중에 이 자료들을 보고, pm이 개발자를 뽑는다고 하였기에, 좋은 프로젝트 팀에 들어가기 위해선 잘 정리를 해야한다고 생각했다</p>
@@ -137,23 +137,23 @@ const Review1 = () => {
         <p>정말 가고 싶었는데 너무나도 아쉬웠다ㅜ</p>
         <p>출근길 버스에서도 계속 코드를 작성했고,</p>
         <p>회사에서도 중간중간 수정을 하였다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/1/5.png" alt="review-img-2-5" width={300} height={400} />
           <p>데모데이 우리 부스 사진</p>
           <StaticImage src="../../../../assets/imgs/review/1/6.png" alt="review-img-2-6" width={300} height={400} />
           <p>처음부터 계속 참여하고 싶었는데 아쉽아쉽</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>나중에 얘기를 들어보니 데모데이때 다른 팀원들이 정말 고생을 해주었던 거 같다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/1/4.png" alt="review-img-2-4" width={300} height={400} />
           <p>UMC 4th 전체사진</p>
-        </PostImgBox>
+        </R.PostImgBox>
         <p>물론 모든 걸 다 개발하진 못했지만 그래도 나름대로 잘 마무리 한 거 같아 뿌듯한 마음이 들었다</p>
         <p>만약 다른 팀원들이 계속해서 프로젝트를 끌고 간다면 나도 끝까지 갈 생각이다</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/1/2.png" alt="review-img-2-2" width={300} height={400} />
           <p>옙뺭이 만들어준 멋진 명함과 나의 수료증,,</p>
-        </PostImgBox>
+        </R.PostImgBox>
 
         <h2>끝</h2>
         <p>이번 UMC 활동을 통해 얻은 게 무엇이냐고 한 가지만 말해보라고 한다면 난 팀원들이라고 얘기하고 싶다</p>
@@ -161,15 +161,17 @@ const Review1 = () => {
         <p>진짜 열정 넘쳐 보이는 PM이랑 예쁜 브랜딩 해준 디자이너, 든든한 프론트, 백엔드 팀원들까지</p>
         <p>마지막까지 포기하지 않고 끝까지 같이 해줘서 너무나도 감사하다는 말을 전하고 싶다</p>
         <p>(사실 내가 포기하고 싶었음ㅋㅎ)</p>
-        <PostImgBox>
+        <R.PostImgBox>
           <StaticImage src="../../../../assets/imgs/review/1/3.png" alt="review-img-2-3" width={300} height={400} />
           <p>우주 최강 우리팀 ^^</p>
-        </PostImgBox>
+        </R.PostImgBox>
 
         <blockquote>자, 그럼 이제 SOPT로 떠나볼까?</blockquote>
-      </PostContentBox>
+      </R.PostContentBox>
     </Post>
   );
 };
+
+export const Head = () => <title>review - UMC 4th 활동을 마치며,,,</title>;
 
 export default Review1;

@@ -10,8 +10,10 @@ const IndexPage = () => {
 
   return (
     <GlobalCSS>
-      <main>
+      <header>
         <MainNav isSticky={isSticky} />
+      </header>
+      <main>
         <HeroSection isSticky={isSticky} />
         <FeatureSection />
       </main>
