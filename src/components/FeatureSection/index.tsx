@@ -17,7 +17,7 @@ const FeatureSection = () => {
           date="23.08.11"
           subTitle="electron-vite with react 초기 alias 설정..."
         >
-          <StaticImage src="../../assets/imgs/review/1/1.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
         </PostPreview>
         <PostPreview
           mainTitle="UMC 4th 활동을 마..."
@@ -33,7 +33,7 @@ const FeatureSection = () => {
           date="23.09.30"
           subTitle="9월의 점검 및 10월의 계획"
         >
-          <StaticImage src="../../assets/imgs/review/1/1.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
         </PostPreview>
         <PostPreview
           mainTitle="EC2를 이용하여 Ne..."
@@ -65,7 +65,7 @@ const FeatureSection = () => {
           date="23.08.31"
           subTitle="9월의 계획"
         >
-          <StaticImage src="../../assets/imgs/review/1/1.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
         </PostPreview>
         <PostPreview
           mainTitle="초기 세팅"
@@ -73,7 +73,7 @@ const FeatureSection = () => {
           date="23.08.11"
           subTitle="프로젝트 초기 세팅 하기"
         >
-          <StaticImage src="../../assets/imgs/review/1/1.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
         </PostPreview>
         <PostPreview
           mainTitle="if else문 지양"
@@ -81,7 +81,7 @@ const FeatureSection = () => {
           date="23.08.11"
           subTitle="if-else 분기문을 지양하자"
         >
-          <StaticImage src="../../assets/imgs/review/1/1.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </S.PostList>
     </S.FeatureContainer>
