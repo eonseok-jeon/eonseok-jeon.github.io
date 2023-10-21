@@ -33,6 +33,9 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
               <li data-hover="Refactoring">
                 <Link to="#">Refactoring</Link>
               </li>
+              <li data-hover="TIL">
+                <Link to="#">TIL</Link>
+              </li>
             </S.SubCategoryList>
           )}
         </S.CategoryItem>
@@ -86,8 +89,21 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             </S.SubCategoryList>
           )}
         </S.CategoryItem>
-        <S.CategoryItem>
+        <S.CategoryItem
+          onMouseEnter={() => { setSubCategory('review'); }}
+          onMouseLeave={() => { setSubCategory(''); }}
+        >
           <S.CategoryLink to="#">Review</S.CategoryLink>
+          {subCategory === 'review' && (
+            <S.SubCategoryList>
+              <li data-hover="plan">
+                <Link to="#">plan</Link>
+              </li>
+              <li data-hover="review">
+                <Link to="#">review</Link>
+              </li>
+            </S.SubCategoryList>
+          )}
         </S.CategoryItem>
         <S.CategoryItem>
           <button>

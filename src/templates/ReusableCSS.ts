@@ -23,8 +23,8 @@ const PostImgBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40rem;
-    height: 30rem;
+    /* width: 40rem; */
+    /* height: 30rem; */
     margin-bottom: .5rem;
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,15 +39,17 @@ const PostImgBox = styled.div`
 const PostContentBox = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   margin: 6rem 0;
   font-size: 2rem;
   line-height: 1.5;
 
   h2 {
+    width: 100%;
     font-size: 2.2rem;
     font-weight: 500;
-    padding-left: 1rem;
+    padding: .3rem 1rem;
     margin-bottom: 1rem;
     background-color: #555;
     border-radius: 1rem;
@@ -55,6 +57,16 @@ const PostContentBox = styled.div`
 
   h2:not(:first-child) {
     margin-top: 7rem;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    padding: .3rem 1rem;
+    background-color: #333;
+    border-radius: 1rem;
   }
 
   blockquote {
