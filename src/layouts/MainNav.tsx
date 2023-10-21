@@ -32,7 +32,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
         </S.MainLogoBox>
         <S.CategoryList>
           <S.CategoryItem>
-            <S.CategoryLink to="#" onClick={openModal}>All</S.CategoryLink>
+            <S.CategoryLink to="#post-preview-list">All</S.CategoryLink>
           </S.CategoryItem>
           <S.CategoryItem>
             <S.CategoryLink to="#" onClick={openModal}>Algorithm</S.CategoryLink>
