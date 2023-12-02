@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import MenuIc from '@assets/icons/menuIc.svg';
+import MainLogoIc from '@assets/icons/mainLogo.svg';
+import SearchIc from '@assets/icons/searchIc.svg';
 import Modal from '@components/Modal';
 import useModal from '@hooks/useModal';
 import * as S from './style';
@@ -27,7 +29,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
       {isModal && <Modal closeModal={closeModal} />}
       <S.MainNavigation sticky={isSticky}>
         <S.MainLogoBox to="/">
-          <StaticImage src="../assets/icons/mainLogo.svg" alt="main-logo" />
+          <MainLogoIc />
           <p>개발 블로그</p>
         </S.MainLogoBox>
         <S.CategoryList>
@@ -124,7 +126,8 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
           </S.CategoryItem>
           <S.CategoryItem>
             <button onClick={openModal}>
-              <StaticImage src="../assets/icons/searchIc.svg" alt="search-icon" />
+              <SearchIc />
+              <MenuIc />
             </button>
           </S.CategoryItem>
         </S.CategoryList>

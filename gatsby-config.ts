@@ -30,6 +30,14 @@ const config: GatsbyConfig = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp'

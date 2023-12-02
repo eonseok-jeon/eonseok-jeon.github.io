@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import ReactIc from '@assets/icons/reactIc.svg';
 import * as S from './style';
 
 interface IPostPreviewProps {
@@ -20,7 +20,7 @@ const PostPreview = ({ mainTitle, tag, date, subTitle, children }: PropsWithChil
         </S.PostImgBox>
         <S.PostInfoBox>
           <S.PostTitleBox>
-            <StaticImage src="../../assets/icons/reactIc.svg" alt="img" width={20} height={20} />
+            <ReactIc width={20} height={20} />
             <p>{mainTitle}</p>
           </S.PostTitleBox>
           <S.PostSubTitleParagraph>{subTitle}</S.PostSubTitleParagraph>
