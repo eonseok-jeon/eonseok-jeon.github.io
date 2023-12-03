@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import * as R from '@templates/ReusableCSS';
 
 interface IHeroContainerProps {
-  isSticky: boolean;
+  $isSticky: boolean;
 }
 
 const HeroContainer = styled(R.Container)<IHeroContainerProps>`
@@ -12,12 +12,12 @@ const HeroContainer = styled(R.Container)<IHeroContainerProps>`
   /* max-width: 121.6rem; */
   /* max-width: 120rem; */
   height: calc(100vh - 14.6rem);
-  margin: ${({ isSticky }) => isSticky ? '14.6rem auto 0' : '0 auto'};
+  margin: ${({ $isSticky }) => ($isSticky ? '14.6rem auto 0' : '0 auto')};
 `;
 
 const IntroductionBox = styled.div`
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   flex-direction: column;
   justify-content: center;
   height: 41.2rem;
@@ -26,62 +26,64 @@ const IntroductionBox = styled.div`
 const MainTitle = styled.h1`
   font-size: 6rem;
   font-weight: 700;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 `;
 
 const DescriptionBox = styled.div`
   font-size: 2.4rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   word-break: keep-all;
 `;
 
 interface ISecretAgeParagraphProps {
-  showAge: boolean;
+  $showAge: boolean;
 }
 
 const SecretAgeParagraph = styled.p<ISecretAgeParagraphProps>`
   display: inline-block;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 
-  ${({ showAge }) => showAge ?
-    css`
-      margin-left: 0;
-      pointer-events: auto;
-      visibility: visible;
-      opacity: 1;
-    ` : 
-    css`
-      margin-left: -10.2rem;
-      pointer-events: none;
-      visibility: hidden;
-      opacity: 0;
-  `}
+  ${({ $showAge }) =>
+    $showAge
+      ? css`
+          margin-left: 0;
+          pointer-events: auto;
+          visibility: visible;
+          opacity: 1;
+        `
+      : css`
+          margin-left: -10.2rem;
+          pointer-events: none;
+          visibility: hidden;
+          opacity: 0;
+        `}
 `;
 
 interface ISecretParagraphProps {
-  showText: boolean;
+  $showText: boolean;
 }
 
 const SecretParagraph = styled.p<ISecretParagraphProps>`
   display: inline-block;
   margin-left: 1rem;
   color: #333;
-  opacity: ${({ showText }) => showText ? 1 : 0};
+  opacity: ${({ $showText }) => ($showText ? 1 : 0)};
   transition: all 1s ease;
 `;
 
 interface IExploreBoxProps {
-  btnHover: boolean;
+  $btnHover: boolean;
 }
 
 const ExploreBox = styled.div<IExploreBoxProps>`
-  ${({ btnHover }) => btnHover &&
+  ${({ $btnHover }) =>
+    $btnHover &&
     css`
-      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
       transform: translate3d(0, 0, 0);
       backface-visibility: hidden;
       perspective: 1000px;
-  `}
+    `}
 
   @keyframes shake {
     10%,
@@ -90,7 +92,7 @@ const ExploreBox = styled.div<IExploreBoxProps>`
     }
     20%,
     80% {
-      transform: translate3d(.2rem, 0, 0);
+      transform: translate3d(0.2rem, 0, 0);
     }
     30%,
     50%,
@@ -99,7 +101,7 @@ const ExploreBox = styled.div<IExploreBoxProps>`
     }
     40%,
     60% {
-      transform: translate3d(.4rem, 0, 0);
+      transform: translate3d(0.4rem, 0, 0);
     }
   }
 `;
@@ -119,27 +121,27 @@ const ExploreBtn = styled(Link)`
   cursor: pointer;
   position: relative;
   z-index: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 
   &::before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -0.2rem;
-    left:-0.2rem;
+    left: -0.2rem;
     background-size: 400%;
     z-index: -1;
-    filter: blur(.5rem);
-    width: calc(100% + .4rem);
-    height: calc(100% + .4rem);
+    filter: blur(0.5rem);
+    width: calc(100% + 0.4rem);
+    height: calc(100% + 0.4rem);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     border-radius: 5rem;
   }
 
   &:active {
-    color: #000
+    color: #000;
   }
 
   &:active:after {
@@ -163,9 +165,15 @@ const ExploreBtn = styled(Link)`
   }
 
   @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
   }
 `;
 
@@ -177,7 +185,7 @@ export {
   SecretAgeParagraph,
   SecretParagraph,
   ExploreBox,
-  ExploreBtn
+  ExploreBtn,
 };
 
 /* as */
