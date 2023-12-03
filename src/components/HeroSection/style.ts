@@ -20,13 +20,14 @@ const IntroductionBox = styled.div`
   gap: 0.8rem;
   flex-direction: column;
   justify-content: center;
-  height: 41.2rem;
+  margin: 7% 0;
 `;
 
 const MainTitle = styled.h1`
   font-size: 6rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
+  word-break: keep-all;
 `;
 
 const DescriptionBox = styled.div`
@@ -76,8 +77,6 @@ interface IExploreBoxProps {
 }
 
 const ExploreBox = styled.div<IExploreBoxProps>`
-  margin-top: 10rem;
-
   ${({ $btnHover }) =>
     $btnHover &&
     css`
@@ -109,21 +108,24 @@ const ExploreBox = styled.div<IExploreBoxProps>`
 `;
 
 const ExploreBtn = styled(Link)`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40rem;
+  width: 40%;
   height: 10rem;
-  border: 1px solid #ddd;
-  border-radius: 5rem;
-  outline: none;
+  padding: 0 10%;
   margin: 1.4rem auto 0;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  outline: none;
   font-size: 3.2rem;
   font-weight: 700;
+  text-align: center;
+  word-break: keep-all;
   cursor: pointer;
-  position: relative;
-  z-index: 0;
   transition: all 0.5s ease;
+  z-index: 0;
 
   &::before {
     content: '';
@@ -189,5 +191,3 @@ export {
   ExploreBox,
   ExploreBtn,
 };
-
-/* as */

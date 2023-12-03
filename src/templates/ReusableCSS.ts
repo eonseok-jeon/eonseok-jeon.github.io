@@ -3,12 +3,17 @@ import styled from 'styled-components';
 const Container = styled.section`
   width: 100%;
   padding: 0 10rem;
+
+  /* 640px */
+  @media screen and (max-width: 40em) {
+    padding: 0 10%;
+  }
 `;
 
 const MainTitle = styled.h1`
   font-size: 6rem;
   font-weight: 700;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 `;
 
 const SubTitle = styled.h3`
@@ -25,7 +30,7 @@ const PostImgBox = styled.div`
     justify-content: center;
     /* width: 40rem; */
     /* height: 30rem; */
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -49,7 +54,7 @@ const PostContentBox = styled.div`
     width: 100%;
     font-size: 2.2rem;
     font-weight: 500;
-    padding: .3rem 1rem;
+    padding: 0.3rem 1rem;
     margin-bottom: 1rem;
     background-color: #555;
     border-radius: 1rem;
@@ -64,24 +69,18 @@ const PostContentBox = styled.div`
     justify-content: center;
     font-weight: 500;
     margin: 2rem 0 1rem;
-    padding: .3rem 1rem;
+    padding: 0.3rem 1rem;
     background-color: #333;
     border-radius: 1rem;
   }
 
   blockquote {
     font-weight: 700;
-    border: .4rem solid #555;
+    border: 0.4rem solid #555;
     border-radius: 1rem;
     padding: 1rem;
     margin: 5rem 0 2rem;
   }
 `;
 
-export {
-  Container,
-  MainTitle,
-  SubTitle,
-  PostImgBox,
-  PostContentBox
-};
+export { Container, MainTitle, SubTitle, PostImgBox, PostContentBox };
