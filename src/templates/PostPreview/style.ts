@@ -1,14 +1,20 @@
 import styled from 'styled-components';
 
+const PostItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const PostArticle = styled.article`
   width: 25.6rem;
   height: 25.6rem;
   margin-bottom: 7rem;
-  padding: .8rem;
+  padding: 0.8rem;
   background-color: #555;
   border-radius: 1.2rem;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-0.5rem);
@@ -17,35 +23,35 @@ const PostArticle = styled.article`
 
 const PostImgBox = styled.div`
   position: relative;
-  
-  img { 
+
+  img {
     border-radius: 1.2rem;
   }
 `;
 
 const TagBox = styled.div`
   position: absolute;
-  left: .8rem;
-  bottom: .8rem;
+  left: 0.8rem;
+  bottom: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .4rem .8rem;
-  background-color: red;
-  border-radius: .8rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #222;
+  border-radius: 0.8rem;
 `;
 
 const PostInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .4rem;
+  gap: 0.4rem;
   justify-content: center;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 `;
 
 const PostTitleBox = styled.div`
   display: flex;
-  gap: .4rem;
+  gap: 0.4rem;
   align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
@@ -62,11 +68,12 @@ const PostDateParagraph = styled.p`
 `;
 
 export {
+  PostItem,
   PostArticle,
   PostImgBox,
   TagBox,
   PostInfoBox,
   PostTitleBox,
   PostSubTitleParagraph,
-  PostDateParagraph
+  PostDateParagraph,
 };
