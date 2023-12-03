@@ -37,7 +37,7 @@ const TagBox = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0.4rem 0.8rem;
-  background-color: red;
+  background-color: #222;
   border-radius: 0.8rem;
 `;
 
