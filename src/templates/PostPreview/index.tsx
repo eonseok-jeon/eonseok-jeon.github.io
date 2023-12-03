@@ -12,7 +12,7 @@ interface IPostPreviewProps {
 /** 포스트 미리보기 */
 const PostPreview = ({ mainTitle, tag, date, subTitle, children }: PropsWithChildren<IPostPreviewProps>) => {
   return (
-    <li>
+    <S.PostItem>
       <S.PostArticle>
         <S.PostImgBox>
           {children}
@@ -27,7 +27,7 @@ const PostPreview = ({ mainTitle, tag, date, subTitle, children }: PropsWithChil
           <S.PostDateParagraph>{date}</S.PostDateParagraph>
         </S.PostInfoBox>
       </S.PostArticle>
-    </li>
+    </S.PostItem>
   );
 };
 

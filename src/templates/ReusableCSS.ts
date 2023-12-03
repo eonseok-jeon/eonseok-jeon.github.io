@@ -4,8 +4,8 @@ const Container = styled.section`
   width: 100%;
   padding: 0 10rem;
 
-  /* 640px */
-  @media screen and (max-width: 40em) {
+  /* 810px */
+  @media screen and (max-width: 50.9375em) {
     padding: 0 10%;
   }
 `;
