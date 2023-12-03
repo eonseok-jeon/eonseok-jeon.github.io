@@ -10,7 +10,8 @@ import * as S from './style';
 /** Main Navigation */
 const MainNav = ({ isSticky }: { isSticky: boolean }) => {
   const [subCategory, setSubCategory] = useState('');
-  
+  const [showMenu, setShowMenu] = useState(false);
+
   const { isModal, openModal, closeModal } = useModal();
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
           <MainLogoIc />
           <p>개발 블로그</p>
         </S.MainLogoBox>
-        <S.CategoryList>
+        <S.CategoryList $showMenu={showMenu}>
           <S.CategoryItem>
             <S.CategoryLink to="#post-preview-list">전체</S.CategoryLink>
           </S.CategoryItem>
@@ -124,13 +125,13 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
               </S.SubCategoryList>
             )}
           </S.CategoryItem>
-          <S.CategoryItem>
-            <button onClick={openModal}>
-              <SearchIc />
-              <MenuIc />
-            </button>
-          </S.CategoryItem>
+          <button onClick={openModal}>
+            <SearchIc />
+          </button>
         </S.CategoryList>
+        <S.MenuButton onClick={() => { setShowMenu(prev => !prev); }}>
+          <MenuIc />
+        </S.MenuButton>
       </S.MainNavigation>
     </>
   );
