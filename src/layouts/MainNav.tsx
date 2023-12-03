@@ -23,7 +23,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
     window.addEventListener('keydown', close);
 
     return () => window.removeEventListener('keydown', close);
-  },[]);
+  }, []);
 
   return (
     <>
@@ -35,16 +35,23 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
         </S.MainLogoBox>
         <S.CategoryList $showMenu={showMenu}>
           <S.CategoryItem>
-            <S.CategoryLink to="#post-preview-list">전체</S.CategoryLink>
+            <S.CategoryLink to="/#post-preview-list">전체</S.CategoryLink>
           </S.CategoryItem>
           <S.CategoryItem>
-            <S.CategoryLink to="#" onClick={openModal}>알고리즘</S.CategoryLink>
+            <S.CategoryLink to="#" onClick={openModal}>
+              알고리즘
+            </S.CategoryLink>
           </S.CategoryItem>
           <S.CategoryItem
-            onMouseEnter={() => { setSubCategory('code'); }}
-            onMouseLeave={() => { setSubCategory(''); }}
-          >
-            <S.CategoryLink to="#" onClick={openModal}>코딩</S.CategoryLink>
+            onMouseEnter={() => {
+              setSubCategory('code');
+            }}
+            onMouseLeave={() => {
+              setSubCategory('');
+            }}>
+            <S.CategoryLink to="#" onClick={openModal}>
+              코딩
+            </S.CategoryLink>
             {subCategory === 'code' && (
               <S.SubCategoryList>
                 <li data-hover="클린코딩" onClick={openModal}>
@@ -60,10 +67,15 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             )}
           </S.CategoryItem>
           <S.CategoryItem
-            onMouseEnter={() => { setSubCategory('cs'); }}
-            onMouseLeave={() => { setSubCategory(''); }}
-          >
-            <S.CategoryLink to="#" onClick={openModal}>컴퓨터</S.CategoryLink>
+            onMouseEnter={() => {
+              setSubCategory('cs');
+            }}
+            onMouseLeave={() => {
+              setSubCategory('');
+            }}>
+            <S.CategoryLink to="#" onClick={openModal}>
+              컴퓨터
+            </S.CategoryLink>
             {subCategory === 'cs' && (
               <S.SubCategoryList>
                 <li data-hover="컴퓨터구조" onClick={openModal}>
@@ -76,10 +88,15 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             )}
           </S.CategoryItem>
           <S.CategoryItem
-            onMouseEnter={() => { setSubCategory('language'); }}
-            onMouseLeave={() => { setSubCategory(''); }}
-          >
-            <S.CategoryLink to="#" onClick={openModal}>언어</S.CategoryLink>
+            onMouseEnter={() => {
+              setSubCategory('language');
+            }}
+            onMouseLeave={() => {
+              setSubCategory('');
+            }}>
+            <S.CategoryLink to="#" onClick={openModal}>
+              언어
+            </S.CategoryLink>
             {subCategory === 'language' && (
               <S.SubCategoryList>
                 <li data-hover="HTML" onClick={openModal}>
@@ -110,10 +127,15 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             )}
           </S.CategoryItem>
           <S.CategoryItem
-            onMouseEnter={() => { setSubCategory('review'); }}
-            onMouseLeave={() => { setSubCategory(''); }}
-          >
-            <S.CategoryLink to="#" onClick={openModal}>일상</S.CategoryLink>
+            onMouseEnter={() => {
+              setSubCategory('review');
+            }}
+            onMouseLeave={() => {
+              setSubCategory('');
+            }}>
+            <S.CategoryLink to="#" onClick={openModal}>
+              일상
+            </S.CategoryLink>
             {subCategory === 'review' && (
               <S.SubCategoryList>
                 <li data-hover="계획" onClick={openModal}>
@@ -129,7 +151,10 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
             <SearchIc />
           </button>
         </S.CategoryList>
-        <S.MenuButton onClick={() => { setShowMenu(prev => !prev); }}>
+        <S.MenuButton
+          onClick={() => {
+            setShowMenu((prev) => !prev);
+          }}>
           <MenuIc />
         </S.MenuButton>
       </S.MainNavigation>
