@@ -6,6 +6,10 @@ const PostArticle = styled.article`
   margin: 8rem auto 0;
   padding: 7%;
 
+  &::-webkit-scrollbar {
+    display: visible; /* Chrome, Safari, Opera*/
+  }
+
   pre {
     display: inline-block;
     width: 100%;
@@ -17,10 +21,6 @@ const PostArticle = styled.article`
     color: #fff;
     background-color: #222;
     border: 0.1rem solid #666;
-
-    &::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera*/
-    }
   }
 `;
 

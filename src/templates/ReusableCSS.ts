@@ -22,17 +22,24 @@ const SubTitle = styled.h3`
 `;
 
 const PostImgBox = styled.div`
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
   margin: 3rem auto 2.5rem;
 
-  img {
+  div {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  img {
     /* width: 40rem; */
     /* height: 30rem; */
     margin-bottom: 0.5rem;
-    background-size: contain;
-    background-repeat: no-repeat;
+    object-fit: contain;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
   }
 
   p {
@@ -80,6 +87,24 @@ const PostContentBox = styled.div`
     border-radius: 1rem;
     padding: 1rem;
     margin: 5rem 0 2rem;
+  }
+
+  del {
+    color: #aaa;
+    font-size: 1.6rem;
+    /* text-decoration: line-through; */
+  }
+
+  strong {
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+  }
+
+  strong:hover {
+    padding: 0 1rem;
+    color: #333;
+    background-color: #ddd;
   }
 `;
 
