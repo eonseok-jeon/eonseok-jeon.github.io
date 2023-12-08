@@ -9,11 +9,11 @@ const FeatureContainer = styled(R.Container)`
   padding-top: 12rem;
 `;
 
-const PostList = styled.ul`
+const PostDataList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27.6rem, 1fr));
   column-gap: 2rem;
   margin-top: 3.2rem;
 `;
 
-export { FeatureContainer, PostList };
+export { FeatureContainer, PostDataList };

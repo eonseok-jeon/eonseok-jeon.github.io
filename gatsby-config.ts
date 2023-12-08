@@ -2,8 +2,8 @@ import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'Gatsby for Eonseok\'s GitHub Pages',
-    siteUrl: 'https://eonseok-jeon.github.io'
+    title: "Gatsby for Eonseok's GitHub Pages",
+    siteUrl: 'https://eonseok-jeon.github.io',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -16,32 +16,28 @@ const config: GatsbyConfig = {
         alias: {
           '@assets': 'src/assets',
           '@components': 'src/components',
+          '@core': 'src/core',
           '@hooks': 'src/hooks',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
           '@templates': 'src/templates',
-          '@posts': 'content/posts'
+          '@posts': 'content/posts',
         },
-        extensions: [
-          'js', 
-          'ts',
-          'jsx',
-          'tsx'
-        ]
-      }
+        extensions: ['js', 'ts', 'jsx', 'tsx'],
+      },
     },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
-        }
-      }
+          include: /assets/, // See below to configure properly
+        },
+      },
     },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp'
-  ]
+    'gatsby-plugin-sharp',
+  ],
 };
 
 export default config;
