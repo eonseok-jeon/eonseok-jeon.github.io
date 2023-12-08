@@ -590,6 +590,12 @@ const Review4 = () => {
         <p>세상에 의미 없는, 교훈 없는 활동들은 없는 거 같다는 걸 다시 한 번 느끼게 된 거 같다.</p>
         <br />
         <p>많이 약해져 있던 나 자신을 다시 다잡고 전진해야겠다고 다짐을 하며 회고를 마쳐야겠다.</p>
+        <br />
+        <br />
+        <br />
+        <p>혹시 이 글에 대한 댓글을 달고 싶다면?</p>
+        <a href="https://blog.naver.com/jiko79/223286222580">https://blog.naver.com/jiko79/223286222580</a>
+        <p>여기로 와주세요~</p>
       </R.PostContentBox>
     </Post>
   );
