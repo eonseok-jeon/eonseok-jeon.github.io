@@ -8,6 +8,12 @@ import * as S from './style';
 const PostList = () => {
   return (
     <S.PostDataList>
+      <Link to="/posts/daily/plan/3">
+        <PostPreview mainTitle="12월 계획" tag="Plan" date="23.11.30" subTitle="10, 11월의 점검 및 12월의 계획">
+          <StaticImage src="../../assets/imgs/plan/3.png" alt="post-img" width={240} height={160} />
+        </PostPreview>
+      </Link>
+
       <Link to="/posts/daily/review/4">
         <PostPreview mainTitle="SOPKATHON 회고" tag="Review" date="23.11.30" subTitle="눈물의 솝커톤,,🥲">
           <StaticImage src="../../assets/imgs/review/4/5.jpg" alt="post-img" width={240} height={160} />
@@ -16,7 +22,7 @@ const PostList = () => {
 
       <Link to="/posts/daily/plan/2">
         <PostPreview mainTitle="10월 계획" tag="Plan" date="23.09.30" subTitle="9월의 점검 및 10월의 계획">
-          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/plan/2.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </Link>
 
@@ -38,7 +44,7 @@ const PostList = () => {
 
       <Link to="/posts/daily/plan/1">
         <PostPreview mainTitle="9월 계획" tag="Plan" date="23.08.31" subTitle="9월의 계획">
-          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/plan/1.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </Link>
 

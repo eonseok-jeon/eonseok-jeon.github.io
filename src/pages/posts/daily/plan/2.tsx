@@ -5,14 +5,12 @@ import * as R from '@templates/ReusableCSS';
 
 const Plan2 = () => {
   return (
-    <Post 
-      mainTitle="10월 계획"
-      tag="Plan"
-      date="23.09.30"
-      subTitle="9월의 점검 및 10월의 계획"
-    >
-      <StaticImage src="../../../assets/imgs/review/1/1.png" alt="post-img" 
-        style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
+    <Post mainTitle="10월 계획" tag="Plan" date="23.09.30" subTitle="9월의 점검 및 10월의 계획">
+      <StaticImage
+        src="../../../../assets/imgs/plan/2.png"
+        alt="post-img"
+        style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}
+      />
       <R.PostContentBox>
         <h2>9월의 계획 점검</h2>
         <h3>GitHubPages 전체 리팩토링</h3>
@@ -54,7 +52,7 @@ const Plan2 = () => {
 
         <h3>바탕화면 및 핸드폰 갤러리 정리</h3>
         <p>정리했었는데 다시 더러워지고 있,,</p>
-        
+
         <h3>집안일 시작</h3>
         <p>커튼 드디어 빨았다! 속이 다 시원s</p>
 
@@ -67,7 +65,7 @@ const Plan2 = () => {
         <h2>10월의 계획</h2>
         <h3>우테코 지원하기</h3>
         <p>우테코 프리코스 신청</p>
-        
+
         <h3>SOPT의 모든 활동 빠지지 않기</h3>
         <p>모든 세미나 과제 다 하기</p>
         <p>모든 스터디 과제 다 하기</p>

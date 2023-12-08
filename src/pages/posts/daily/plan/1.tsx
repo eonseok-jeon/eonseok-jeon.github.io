@@ -7,7 +7,7 @@ const Plan1 = () => {
   return (
     <Post mainTitle="9월 계획" tag="Plan" date="23.08.31" subTitle="9월의 계획">
       <StaticImage
-        src="../../../assets/imgs/review/1/1.png"
+        src="../../../../assets/imgs/plan/1.png"
         alt="post-img"
         style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}
       />
