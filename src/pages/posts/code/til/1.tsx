@@ -5,14 +5,12 @@ import * as R from '@templates/ReusableCSS';
 
 const Til1 = () => {
   return (
-    <Post 
-      mainTitle="초기 세팅"
-      tag="TIL"
-      date="23.08.11"
-      subTitle="프로젝트 초기 세팅 하기"
-    >
-      <StaticImage src="../../../../assets/imgs/review/1.png" alt="post-img" 
-        style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} />
+    <Post mainTitle="초기 세팅" tag="TIL" date="23.08.11" subTitle="프로젝트 초기 세팅 하기">
+      <StaticImage
+        src="../../../../assets/imgs/no-image/2.png"
+        alt="post-img"
+        style={{ width: '100%', height: '60vh', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}
+      />
       <R.PostContentBox>
         <h2>해야할 것</h2>
         <h3>1. 불필요한 파일들 삭제</h3>
@@ -29,7 +27,8 @@ const Til1 = () => {
         <p>reset, global, variables…</p>
         <p>scss 경우, preprocessorOptions 적용</p>
         <pre>
-          <code>{`
+          <code>
+            {`
 css: {
   preprocessorOptions: {
     scss: {
@@ -47,7 +46,8 @@ css: {
         <h3>4. path 설정</h3>
         <p>path와 alias 설정</p>
         <pre>
-          <code>{`
+          <code>
+            {`
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
   "include": [
@@ -78,7 +78,8 @@ css: {
           </code>
         </pre>
         <pre>
-          <code>{`
+          <code>
+            {`
 import { resolve } from "path";
 import { defineConfig, externalizeDepsPlugin } from "electron-vite";
 import react from "@vitejs/plugin-react";
@@ -125,7 +126,7 @@ export default defineConfig({
           `}
           </code>
         </pre>
-        
+
         <h3>5. 코드 공통 규칙 설정</h3>
         <p>.editorconfig 설정</p>
         <p>.eslintrc.json 설정</p>

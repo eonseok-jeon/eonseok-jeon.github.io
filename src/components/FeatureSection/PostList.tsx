@@ -74,19 +74,19 @@ const PostList = () => {
           tag="Electron-vite"
           date="23.08.11"
           subTitle="electron-vite with react 초기 alias 설정...">
-          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image/3.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </Link>
 
       <Link to="/posts/code/til/1">
         <PostPreview mainTitle="초기 세팅" tag="TIL" date="23.08.11" subTitle="프로젝트 초기 세팅 하기">
-          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image/2.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </Link>
 
       <Link to="/posts/code/clean-coding/1">
         <PostPreview mainTitle="if else문 지양" tag="Clean-coding" date="23.08.11" subTitle="if-else 분기문을 지양하자">
-          <StaticImage src="../../assets/imgs/no-image.png" alt="post-img" width={240} height={160} />
+          <StaticImage src="../../assets/imgs/no-image/1.png" alt="post-img" width={240} height={160} />
         </PostPreview>
       </Link>
     </S.PostDataList>
