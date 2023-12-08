@@ -4,7 +4,7 @@ import MenuIc from '@assets/icons/menuIc.svg';
 import MainLogoIc from '@assets/icons/mainLogo.svg';
 import SearchIc from '@assets/icons/searchIc.svg';
 import Modal from '@components/Modal';
-import useModal from '@hooks/useModal';
+import useTrueFalse from '@hooks/useTrueFalse';
 import * as S from './style';
 
 /** Main Navigation */
@@ -12,7 +12,7 @@ const MainNav = ({ isSticky }: { isSticky: boolean }) => {
   const [subCategory, setSubCategory] = useState('');
   const [showMenu, setShowMenu] = useState(false);
 
-  const { isModal, openModal, closeModal } = useModal();
+  const { isTrue: isModal, makeTrue: openModal, makeFalse: closeModal } = useTrueFalse();
 
   useEffect(() => {
     const close = (e: KeyboardEvent) => {

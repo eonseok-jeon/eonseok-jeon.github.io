@@ -6,7 +6,7 @@ interface IModalProps {
 }
 
 /** 모달창 */
-const Modal = ({ closeModal }: IModalProps) => {
+const Modal = ({ closeModal: closeModal }: IModalProps) => {
   return (
     <>
       <S.ModalBox>
@@ -16,7 +16,7 @@ const Modal = ({ closeModal }: IModalProps) => {
         </S.DescriptionBox>
         <S.CloseButton onClick={closeModal}>응원하기</S.CloseButton>
       </S.ModalBox>
-      <S.OverlayBox onClick={closeModal}/>
+      <S.OverlayBox onClick={closeModal} />
     </>
   );
 };
