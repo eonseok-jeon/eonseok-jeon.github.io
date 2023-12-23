@@ -8,6 +8,12 @@ import * as S from './style';
 const PostList = () => {
   return (
     <S.PostDataList>
+      <Link to="/posts/daily/review/5">
+        <PostPreview mainTitle="합세 회고" tag="Review" date="23.12.06" subTitle="합동의 의미">
+          <StaticImage src="../../assets/imgs/review/5/1.jpg" alt="post-img" width={240} height={160} />
+        </PostPreview>
+      </Link>
+
       <Link to="/posts/daily/plan/3">
         <PostPreview mainTitle="12월 계획" tag="Plan" date="23.11.30" subTitle="10, 11월의 점검 및 12월의 계획">
           <StaticImage src="../../assets/imgs/plan/3.png" alt="post-img" width={240} height={160} />

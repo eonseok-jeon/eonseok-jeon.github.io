@@ -314,6 +314,16 @@ const Review4 = () => {
         <p>혼자서 해결하고 그래서 사실 좀 고마웠다.</p>
         <del>물론 둘 다 옆에서 머리 몇 번 쥐어 뜯는 거 같긴 했지만,,</del>
         <del>근데 뭐, 그러면서 성장하는 거니까?</del>
+        <br />
+        <p>
+          우리가 만든 결과물을 보고 싶다면&nbsp;
+          <strong>
+            <a href="https://do-sopt-sopkathon-team4.vercel.app" target="_blank">
+              여기
+            </a>
+          </strong>
+          를 클릭해 주세요.
+        </p>
         <h2>으응,,? 이 분위기 뭐지</h2>
         <p>시연 영상 빠르게 찍고 제출을 하니</p>
         <p>이제 끝났다는 약간의 해방감? 때문에 살짝 기분이 좋아졌었다.</p>
@@ -594,8 +604,14 @@ const Review4 = () => {
         <br />
         <br />
         <p>혹시 이 글에 대한 댓글을 달고 싶다면?</p>
-        <a href="https://blog.naver.com/jiko79/223286222580">https://blog.naver.com/jiko79/223286222580</a>
-        <p>여기로 와주세요~</p>
+        <p>
+          <strong>
+            <a href="https://blog.naver.com/jiko79/223286222580" target="_blank">
+              &gt;여기&lt;
+            </a>
+          </strong>
+          &nbsp;에 달아주세요~ 감사합니다 :)
+        </p>
       </R.PostContentBox>
     </Post>
   );
