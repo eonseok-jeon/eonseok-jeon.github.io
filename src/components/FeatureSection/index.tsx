@@ -8,7 +8,7 @@ const FeatureSection = () => {
   return (
     <S.FeatureContainer id="post-preview-list">
       <R.MainTitle>My Posts</R.MainTitle>
-      <R.SubTitle>Total (10)</R.SubTitle>
+      <R.SubTitle>Total (12)</R.SubTitle>
       <PostList />
     </S.FeatureContainer>
   );

@@ -454,6 +454,18 @@ const Review5 = () => {
             <p>전체 회고</p>
           </div>
         </R.PostImgBox>
+        <br />
+        <br />
+        <br />
+        <p>혹시 이 글에 대한 댓글을 달고 싶다면?</p>
+        <p>
+          <strong>
+            <a href="https://blog.naver.com/jiko79/223301733710" target="_blank">
+              &gt;여기&lt;
+            </a>
+          </strong>
+          &nbsp;에 달아주세요~
+        </p>
       </R.PostContentBox>
     </Post>
   );
